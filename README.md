@@ -1,0 +1,2 @@
+# AI-powered-email-threat-detector-with-ML-prediction-and-
+AI MailGuard is an AI-powered email security analyzer that detects fake, suspicious, and potentially harmful emails. It analyzes email text, suspicious words, URLs, sender patterns, and urgency signals to generate a confidence score and threat level. It also provides warnings, analysis history, and Tamil-English support through a modern, user-frd.
