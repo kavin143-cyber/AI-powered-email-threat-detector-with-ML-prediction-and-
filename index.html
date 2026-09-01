@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI MailGuard | Email Security Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">🛡️ AI MailGuard</div>
+
+    <div class="nav-right">
+        <span class="status">
+            <span class="dot"></span> AI System Online
+        </span>
+
+        <button id="languageBtn" class="lang-btn">தமிழ்</button>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="badge">🤖 AI POWERED EMAIL SECURITY</div>
+
+        <h1 id="title">
+            Detect Fake & Suspicious Emails
+        </h1>
+
+        <p id="subtitle">
+            Analyze email content, links and suspicious patterns with AI-assisted security analysis.
+        </p>
+    </section>
+
+
+    <section class="analyzer-card">
+
+        <div class="card-title">
+            <h2>📧 Email Analyzer</h2>
+            <span>Secure Analysis</span>
+        </div>
+
+        <label for="sender">Sender Email</label>
+
+        <input
+            type="email"
+            id="sender"
+            placeholder="example@company.com"
+        >
+
+
+        <label for="subject">Email Subject</label>
+
+        <input
+            type="text"
+            id="subject"
+            placeholder="Enter email subject..."
+        >
+
+
+        <label for="body">Email Body</label>
+
+        <textarea
+            id="body"
+            rows="9"
+            placeholder="Paste the email content here..."
+        ></textarea>
+
+
+        <button id="analyzeBtn" class="analyze-btn">
+            🔍 Analyze Email
+        </button>
+
+    </section>
+
+
+    <section id="resultSection" class="result-section hidden">
+
+        <div class="result-header">
+            <h2>📊 AI Analysis Result</h2>
+            <button id="clearBtn" class="clear-btn">Clear</button>
+        </div>
+
+
+        <div class="result-grid">
+
+            <div class="result-card prediction-card">
+                <div class="result-icon">🛡️</div>
+
+                <h3>Prediction</h3>
+
+                <div id="prediction" class="prediction">
+                    -
+                </div>
+            </div>
+
+
+            <div class="result-card">
+                <div class="result-icon">📈</div>
+
+                <h3>Confidence</h3>
+
+                <div class="score-container">
+                    <div id="confidence" class="score">
+                        0%
+                    </div>
+
+                    <div class="progress">
+                        <div id="progressBar"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="result-card">
+                <div class="result-icon">🔍</div>
+
+                <h3>Suspicious Words</h3>
+
+                <div id="suspiciousCount" class="big-number">
+                    0
+                </div>
+            </div>
+
+
+            <div class="result-card">
+                <div class="result-icon">🔗</div>
+
+                <h3>Links Detected</h3>
+
+                <div id="linkCount" class="big-number">
+                    0
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="warning-box">
+
+            <h3>⚠️ Security Warning</h3>
+
+            <p id="warning">
+                Analysis will appear here.
+            </p>
+
+        </div>
+
+
+        <div class="details-box">
+
+            <h3>🔎 Analysis Details</h3>
+
+            <div id="details"></div>
+
+        </div>
+
+    </section>
+
+
+    <section class="history-section">
+
+        <div class="history-header">
+            <h2>📈 Analysis History</h2>
+
+            <button id="clearHistory">
+                Clear History
+            </button>
+        </div>
+
+        <div id="historyList" class="history-list">
+            <p class="empty-history">
+                No email analysis yet.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>AI MailGuard © 2026 | Email Security Analyzer</p>
+    <p class="footer-note">
+        AI results are for educational/demo purposes.
+    </p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
